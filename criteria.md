@@ -55,41 +55,37 @@ in at least 4 of 5 tries.
 
 ---
 
-## 4. Something about your chunks
+## 4. Chunks don't cut a fact in half
 
-<!-- YOU WRITE THIS ONE.
+At least 4 of 5 sampled chunks: no sentence containing a time, price,
+distance, or date is cut off at the start or end of the chunk. (To check:
+read the sentence with the number in it — does it start and end inside the
+chunk, or does it run off the edge?)
 
-     How would you know if your chunks were the right size? Name something
-     countable or observable.
-
-     Examples of the right shape — don't copy these, they should come from
-     what you actually saw in Milestone 3:
-       - "At least 4 of 5 sampled chunks read as a complete thought, with no
-          sentence cut in half at either end."
-       - "No chunk is shorter than 200 characters, since anything below that
-          in my corpus turned out to be a heading with no content under it." -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** Some of my documents put a bunch of different towns'
+facts into one paragraph — like "Kestrelford's pubs serve 12 to 2 and 6 to
+8:30" right next to a sentence about a different town. If my chunks are the
+wrong size, they could cut a sentence like that in half and lose the actual
+number. I said 4 of 5 instead of 5 of 5 because I noticed a couple of these
+paragraphs are so packed that I'm not sure any chunk size handles them
+perfectly.
 
 ---
 
-## 5. Your choice
+## 5. The named source contains the fact used in the answer
 
-<!-- YOU WRITE THIS ONE TOO.
+For at least 4 of 5 test questions, the exact fact used in the answer appears
+somewhere in the document named as the source. (To check: take the fact out
+of the answer, open the cited file, and search for it.)
 
-     Pick something you actually care about getting right. It could be about
-     speed, about refusals, about a particular kind of question your corpus
-     handles badly, about source attribution being correct rather than merely
-     present — anything, as long as it names a number or an observable
-     outcome. -->
-
-
-
-**Why this target:**
+**Why this target:** My corpus has a guide for each town (like
+`guide_kestrelford.md`) but also guides organized by topic (like
+`guide_eating.md`) that mention every town. A question about Kestrelford's
+food hours is actually answered in `guide_eating.md`, not
+`guide_kestrelford.md`, so it would be easy for the system to name the wrong
+file just because it has the town's name in it. Criterion 2 only checks that
+some source gets named — this one checks that the source it names is the
+one that actually backs up the answer.
 
 
 
